@@ -12,6 +12,20 @@
                 name="title"
                 />
             </div>
+            <div class="form-group">
+                <label for="description">Descritpion</label>
+                <input 
+                type="text"
+                class="form-control"
+                id="description"
+                [(ngModel)]="currentTutorial.description"
+                name="description"
+                />
+            </div>
+            <div class="form-group">
+                <label for=""><strong>Status:</strong></label>
+                {{currentTutorial.published? "Published": "Pending"}}
+            </div>
         </form>
     </div>
 </div>
